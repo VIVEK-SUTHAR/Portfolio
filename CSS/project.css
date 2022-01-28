@@ -1,0 +1,129 @@
+.projContainer {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 340px;
+  height: 40vh;
+  cursor: pointer;
+  margin: 12px 12px;
+  border-radius: 10px;
+}
+.projContainer :hover{
+    
+}
+
+.projContainer img {
+  transition: 0.3s;
+  border-radius: 10px;
+  transform: scale(1);
+  height: inherit;
+}
+
+.projContainer:hover img {
+  transform: scale(1);
+  -webkit-transform: scale(1.2);
+}
+
+.projContainer:hover h2 {
+  padding-top: 5%;
+}
+.projContainer:hover .projInfoContainer {
+  background-color: #191627;
+}
+
+.projInfoContainer {
+  position:absolute;
+  background: #ff6363;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.2s;
+  text-align: center;
+  color: #ff6363;
+  font-size: 24px;
+}
+
+.projContainer:hover .projInfoContainer {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+
+}
+
+.projCat {
+  color: #bcf0ff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.projSpec {
+  color: rgb(31, 210, 255);
+  font-family: sans-serif;
+}
+.projContainer .btn {
+  margin-top: 12px;
+  height: 7vh;
+  width: 7vw;
+  border: none;
+  background-color: rgb(209, 160, 255);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+
+}
+.projContainer .btn a {
+  background-color: transparent;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px 10px #594e8a;
+}
+#project {
+  height: 60vh;
+}
+#projecthead {
+  margin-top: 10%;
+  background-color: #bcf0ff;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff6363;
+  background-color: transparent;
+  margin-bottom: 5%;
+}
+@media (max-width:426px){
+    #project{
+        position: relative;
+    }
+    #projecthead {
+        font-size: 32px;
+        font-weight: 800;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .projContainer .btn {
+        width: 25vw;
+        height: 7vh;
+    }
+    .projContainer .btn a{
+        text-decoration: none;
+    }
+}
+@media (max-width:400px) {
+    #prject{
+        height: 80vh;
+    }   
+    #projecthead {
+        margin-top: 20%;
+        font-size: 28px;
+    }
+}

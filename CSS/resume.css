@@ -1,0 +1,92 @@
+#resume {
+  background-color: #191627;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  position: relative;
+  background-color: #191627;
+  width: 90vw;
+  max-height: 100vh;
+  height: 100vh;
+  margin-top: 10%;
+  overflow-y: hidden;
+}
+#edu {
+  position: relative;
+  background-color: #191627;
+  width: 50vw;
+  height: max-content;
+  float: right;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  padding-top: 10px;
+  color: aliceblue;
+}
+#edu_poster img {
+  position: absolute;
+  float: left;
+  width: 40vw;
+  height: 52vh;
+}
+#work {
+  position: relative;
+  background-color: #191627;
+  width: 80vw;
+  height: 100vh;
+  float: right;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: aliceblue;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+#work_poster {
+  position: absolute;
+  float: right;
+  width: 50vw;
+  height: 50v;
+}
+@media (max-width: 420px) {
+  #resume {
+    position: relative;
+    height: max-content;
+
+  }
+  #container {
+    width: 92vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: visible;
+
+  }
+  #edu {
+      flex-direction: column;
+      justify-content: center;
+    width: 100vw;
+    font-size: 22px;
+    align-items: center;
+  }
+  #edu_poster img {
+    position: relative;
+    height: 30vh;
+    width: 92vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-self: center;
+  }
+  #work {
+    font-size: 22px;
+    font-weight: 600;
+    width: 100vw;
+  }
+}

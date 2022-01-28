@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  background-color: #191627;
+  transition-delay: 00.5s;
+}
+::-webkit-scrollbar{width:10px;border-radius: 10px;}
+::-webkit-scrollbar-track{background:rgba(61, 61, 61, 0.637);}
+::-webkit-scrollbar-thumb{background:rgba(175, 175, 175, 0.637);border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover{background:rgba(102, 102, 102, 0.637);}
+::-webkit-scrollbar-track:horizontal{height: 10px;}
+.container {
+  display: block;
+  background-color: #191627;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#landing {
+  position: relative;
+  top: 10%;
+  color: rgb(119, 85, 255);
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10%;
+  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
+}
+#landing .intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  position: relative;
+  left: 2%;
+  font-size: 36px;
+}
+#landing .intro h1 {
+}
+.wrap {
+  color: rgb(92, 255, 225);
+  font-size: 32px;
+}
+#ty {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 35%;
+  left: 20%;
+}
+#landing button {
+  position: absolute;
+  height: 8vh;
+  width: 12vw;
+  top: 65%;
+  left: 10%;
+  font-size: 20px;
+  background-color: transparent;
+  color: aqua;
+  border: 1px solid;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#landing button a {
+  text-decoration: none;
+  color: rgb(117, 237, 255);
+}
+#landing button:hover {
+  transition-delay: 00.5s;
+  background-color: aqua;
+  color: rgb(50, 50, 50);
+}
+#about {
+  position: relative;
+  background-color: #191627;
+  height: max-content;
+  width: 100vw;
+  padding-top: 5%;
+  color: rgb(255, 255, 255);
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+#about {
+  display: flex;
+  justify-content: space-evenly;
+}
+#about img {
+  border-radius: 10px;
+  height: 40vh;
+  width: 20vw;
+}
+#myintro {
+  display: block;
+  width: 30vw;
+  height: 60vh;
+  font-size: 22px;
+}
+#skills {
+  position: absolute;
+  margin-top: 25%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  font-size: 28px;
+  height: max-content;
+  width: 100vw;
+  text-align: center;
+}
+#lang {
+  text-align: center;
+}
+#lang img {
+  height: 5vh;
+  width: 3vw;
+}
+
+#tools img{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 45px;
+  width: 2.99999vw;
+  padding: 5px;
+  text-align: center;
+}
+#lib img{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40px;
+  width: 2.99999vw;
+  text-align: center;
+}
+table{
+height: 10%;
+padding: 12px 12px;
+}
+table td{
+}
+
+#projects {
+  position: relative;
+  background-color: #191627;
+  color: #000;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10%;
+  transition: all 0.45s ease-in-out;
+}
+#project_head {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  font-size: 32px;
+  margin-top: 1%;
+  color: rgb(255, 106, 106);
+}
+
+#project_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 5%;
+  width: 95vw;
+  margin-left: 2vw;
+}
+
+.cards {
+  height: 47vh;
+  background-color: #ffffff70;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgb(43, 43, 43);
+  overflow: hidden;
+}
+.cards:hover {
+  box-shadow: 0 0 22px 10px rgb(148, 148, 148);
+  height: 51vh;
+}
+.cards img {
+  /* width: inherit; */
+  height:30vh;
+  width: 21.5vw;
+  border-radius: 5px;
+  /* width: fit-content; */
+}
+.cards h5 {
+  font-size: 15px;
+  background-color: inherit;
+}
+.cards button {
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:6vw;
+  height: 5vh;
+  margin-left: 7%;
+  background-color: #ffffff83;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2px;
+}
+.cards button a {
+  background-color: transparent;
+  text-decoration: none;
+  color: #fff;
+}
+.cards button:hover{
+
+}
+#p2 {
+  position: absolute;
+  margin-top: 30vh;
+  height: 4vh;
+  margin-left: -8vw;
+  width: 6vw;
+  z-index: 99;
+  border-radius: 5px;
+  border: none;
+  background-color: #9a83ff;
+  transition: all 0.2s ease-in-out;
+  z-index: 9999;
+}
+#p3 {
+  margin-left: -6vw;
+}
+
+#p3:hover {
+  background-color: #876cff;
+  height: 4.5vh;
+}
+#p2:hover {
+  background-color: #876cff;
+  width: 6.5vw;
+}
+#p1explore {
+  margin-top: 40vh;
+  width: 15vw;
+  height: 8vh;
+  margin-left: 12%;
+  background-color: rgb(195, 201, 201);
+  border-radius: inherit;
+  opacity: 0.5;
+}
+
+
+@media (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  #landing .intro {
+    display: block;
+    left: 10%;
+    font-size: 24px;
+  }
+  #ty {
+    display: block;
+    top: 15rem;
+    left: 8%;
+    font-size: 20px;
+    width: 80vw;
+  }
+  .wrap {
+    font-size: 28px;
+  }
+  #landing button {
+    height: 6vh;
+    width: 30vw;
+    top: 70%;
+    left: 10%;
+    font-size: 18px;
+  }
+  #about {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* height: 145vh;
+     */
+    height: max-content;
+    font-size: 32px;
+    transition: all 0.25s ease-in-out;
+  }
+  #about img {
+    display: block;
+    margin-left: 20%;
+    height: 30vh;
+    width: 30vh;
+    margin-top: 10%;
+  }
+  #myintro {
+    display: block;
+    width: 85vw;
+    height: 60vh;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 2%;
+    font-size: 22px;
+  padding: 12px 12px;
+
+  }
+  #skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -5%;
+  }
+  #lang img {
+    height: 8vh;
+    width: 15vw;
+  }
+  #tools{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+  #tools:first-child{
+    column-span: 12px;
+  }
+  #tools img{
+ display: none;
+  }
+
+  #about #info {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding-left: 50px;
+    margin-left: -5%;
+    width: 65vw;
+  }
+  #projects .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #projects .project:hover {
+    height: 16vh;
+    width: 52vw;
+  }
+  #projects .project {
+    height: 18vh;
+    width: 60vw;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+  #container {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+  #project_card {
+    grid-template-columns: repeat(1, 5fr);
+    row-gap: 12px;
+  }
+  .cards {
+    height: 20vh;
+    margin: 10px 15%;
+    font-size: 18px;
+  }
+  #lib img{
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+  #about {
+    display: block;
+    height: max-content;
+  }
+  #skills {
+    position: relative;
+    margin-top: 10%;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  .cards {
+    height: 25vh;
+    width: 50vw;
+    margin: 15px 25%;
+  }
+  .cards img {
+    width: inherit;
+  }
+}

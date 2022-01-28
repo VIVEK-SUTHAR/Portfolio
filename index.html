@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivek Suthar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/resume.css" />
+    <link rel="stylesheet" href="CSS/project.css" />
+    <link rel="stylesheet" href="CSS/social.css" />
+  </head>
+  <body class="animate_animated">
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="#">Vivek</a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"> </i>
+          </div>
+          <li><a href="#home" onclick="closeNav()">Home</a></li>
+          <li><a href="#about" onclick="closeNav()">About</a></li>
+          <li><a href="#resume" onclick="closeNav()">Resume</a></li>
+          <li><a href="#project" onclick="closeNav()">Projects</a></li>
+          <li><a href="#ft" onclick="closeNav()">Get In Touch</a></li>
+        </ul>
+        <div class="icon menu-btn" onclick="showNav()">
+          <i class="fas fa-bars"> </i>
+        </div>
+      </div>
+    </nav>
+    <!-- container for about section  -->
+    <div id="home" class="container">
+      <section id="landing">
+        <span class="intro">
+          <h1 class="animate__animated animate__slideInDown">
+            &ltHello,World&gt<br />
+            Hi,I Am Vivek Suthar
+          </h1>
+          <br />
+          <span id="ty"
+            ><br />
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='[ "An IT Student", "Web Developer", "3⭐ At Codechef" ]'
+            >
+              <br /><span class="wrap"></span>
+            </a>
+          </span>
+        </span>
+        <button><a href="#about">About Me</a></button>
+      </section>
+    </div>
+    <!-- project  -->
+    <section id="about">
+      <img src="Pic.jpg" />
+      <div id="myintro" class="animate__animated">
+        Hi! 👋 I'm Vivek, a 19-year-old engineering sophomore pursuing BTech in
+        Information Technology. I am a passionate self-learner, CP E, Open
+        source enthusiast, exploring and building projects👨‍💻 using various
+        technologies. I am a frontend web developer well versed in HTML, CSS,
+        JavaScript and stand at a beginner-intermediate level of React.
+      </div>
+      <br />
+      <span id="skills" class="animate__animated">
+        <span id="lang">
+          Skills:<br />
+          <table>
+            <tr>
+              <td><img src="c.svg" /></td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><img src="cpp.svg" /></td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><img src="js.svg" /></td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><img src="algo.png" /></td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><img src="java.gif" /></td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><img src="sql.png" /></td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+        </span>
+
+        <br />
+        <span id="tools">
+          Tools That I Use:
+          <br />
+          <img src="vscode.svg" />VS Code<br />
+          <img src="git.svg" />Git<br />
+          <img src="Github.svg" />Github<br />
+          <img src="mysql.svg" />MySQL<br />
+          <img src="win10.svg" /> Windows<br />
+          <img src="linux.png" /> Linux
+        </span>
+        <span id="lib">
+          Libraries And FrameWorks:<br />
+          <img src="react.gif" />ReactJs<br />
+          <img src="jQuery.png" />jQuery<br />
+          <img src="bootstrap.svg" />BootStrap<br />
+          AnimateCSS<br />
+        </span>
+      </span>
+    </section>
+    <!-- download resume from Here  -->
+    <section id="resume">
+      <div id="container">
+        <div id="edu_poster" class="animate__animated"><img src="edu.svg"</div>
+        <div id="edu">
+          Education<br />
+          Pursuing B.E I.T From SVIT,Vasad<br />
+          Current Sem:4 CGPA:8.60<br />
+          12th HSC,Science,Kalarav School,Halol<br />
+          Grade:68.5%<br />
+          10th SSC,N.T High School,Kanisa<br />
+          Grade:87.5%<br />
+        </div>
+        <div id="work" class="animate__animated">
+          <h1>Achivements 🙆‍♂️</h1>
+          👉3⭐ Codechef<br />
+          👉Secured Global Rank Of 535,<br />
+          At Codechef LunchTime(Nov)<br />
+          👉Qualified For SnackDown 2021<br />
+        </div>
+      </div>
+    </section>
+    <!-- <section id="projects" >
+      <span id="project_head" class="animate__animated">Check Out My Projects</span>
+      <div id="project_card">
+        <div class="cards" class="animate__animated">
+          <img src="p1.png" />
+          Crypto Price Tracker<br>
+          Real Time Crypto price Tracker<br>
+          <button class="animate__animated">
+        <a href="">Check Out</a>
+          </button>
+        </div>
+        <div class="cards">
+          <img src="p2.png" />
+          macOS Clone<br>
+          Tried To Clone UI Of macOs
+          (In Progress)
+          <button>
+            <a href="">Check Out</a>
+              </button>
+        </div>
+        <div class="cards">
+          <img src="p3.png" />
+          Text-Utils<br>
+          Manipuliate Text<br>
+          Made With React
+          <br>
+          <button>
+            <a href="">Check Out</a>
+              </button>
+        </div>
+        <div class="cards">HI Vivek</div>
+      </div>
+    </section> -->
+    <section id="project">
+      <div id="projecthead">Here Is Some Projects That I Made</div>
+      <div class="projContainer">
+        <div class="projInfoContainer">
+          <h2>Crypto Price Tracker</h2>
+          <p class="projCat"></p>
+          <p class="projSpec">
+            <br />Real Time Crypto-Currencies Price Tracker<br />Made with
+            public API And React<br />
+            <button class="btn">
+              <a href="https://cryptopricetrackerbyvivek.netlify.app"
+                >Check Out</a
+              >
+            </button>
+          </p>
+        </div>
+        <img src="p1.png" />
+      </div>
+
+      <div class="projContainer">
+        <div class="projInfoContainer">
+          <h2>macOS Clone</h2>
+          <p class="projCat"></p>
+          <p class="projSpec">
+            Tried To Clone UI Of macOS<br />
+            using HTML,CSS,JavaScript And Little bit of jQuery
+            <br />Work In Progress
+          </p>
+          <br />
+          <button class="btn">
+            <a href="https://vivek-suthar.github.io/macOS-clone/">Check Out</a>
+          </button>
+        </div>
+        <img src="p2.png" />
+      </div>
+
+      <div class="projContainer">
+        <div class="projInfoContainer">
+          <h2>Text-utils</h2>
+          <p class="projCat"></p>
+          <p class="projSpec">
+            Manipuliate your text with Text-Utils<br />
+            Made With ReactJS<br />
+            <button class="btn">
+              <a href="https://textutilsbyvivek.netlify.app">Check Out</a>
+            </button>
+          </p>
+        </div>
+        <img src="p3.png" />
+      </div>
+
+      <div class="projContainer">
+        <div class="projInfoContainer">
+          <h2>To-Do App</h2>
+          <p class="projCat"></p>
+          <p class="projSpec">
+            Manage your daily Work<br />
+            With ThisTo-Do App<br />
+            Made With ReactJS<br />
+            <button class="btn">
+              <a href="todosbyvivek.netlify.app">Check Out</a>
+            </button>
+          </p>
+        </div>
+        <img src="p4.png" />
+      </div>
+    </section>
+    <footer id="ft">
+      <div id="follow">
+        Follow Me
+          
+          <i class="fab fa-linkedin-in"></i>
+          Vivek Suthar<br>
+          <i class="fab fa-github"></i>
+          Github:VIVEK-SUTHAR<br>
+          <i class="fas fa-envelope-open"></i>sutharvivek18@gmail.com<br>
+        
+      </div>
+      <div id="Links">
+        Quick Links
+        <br><br>
+        <a href="https://viveksuthar.netlify.app">Profile Card</a> 
+        <br>
+        <a href="#home">Home</a> <br>
+        <a href="#about">About</a> <br>
+      </div>
+      <div id="ME">
+        Made With ❤  &copy Vivek-Suthar
+      </div>
+    </footer>
+    
+    <!-- Javascript loded at end  -->
+    <script src="CSS/app.js"></script>
+  </body>
+</html>
