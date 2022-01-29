@@ -292,7 +292,7 @@ table td{
     flex-direction: column;
     justify-content: flex-start;
     /* height: 145vh;
-     */
+     */align-items:center;
     height: max-content;
     font-size: 32px;
     transition: all 0.25s ease-in-out;
@@ -306,13 +306,13 @@ table td{
   }
   #myintro {
     display: block;
-    width: 85vw;
-    height: 60vh;
+    width: 100vw;
+    height: 50vh;
     text-align: center;
-    margin-top: 10%;
-    margin-left: 2%;
+    /* margin-top: 10%;
+    margin-left: 2%; */
     font-size: 22px;
-  padding: 12px 12px;
+  padding: 12px 1px;
 
   }
   #skills {
