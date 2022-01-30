@@ -8,11 +8,23 @@
   background-color: #191627;
   transition-delay: 00.5s;
 }
-::-webkit-scrollbar{width:10px;border-radius: 10px;}
-::-webkit-scrollbar-track{background:rgba(61, 61, 61, 0.637);}
-::-webkit-scrollbar-thumb{background:rgba(175, 175, 175, 0.637);border-radius: 10px;}
-::-webkit-scrollbar-thumb:hover{background:rgba(102, 102, 102, 0.637);}
-::-webkit-scrollbar-track:horizontal{height: 10px;}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(61, 61, 61, 0.637);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(175, 175, 175, 0.637);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 102, 102, 0.637);
+}
+::-webkit-scrollbar-track:horizontal {
+  height: 10px;
+}
 .container {
   display: block;
   background-color: #191627;
@@ -106,7 +118,7 @@
   position: absolute;
   margin-top: 25%;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 28px;
   height: max-content;
@@ -121,7 +133,7 @@
   width: 3vw;
 }
 
-#tools img{
+#tools img {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -131,7 +143,7 @@
   padding: 5px;
   text-align: center;
 }
-#lib img{
+#lib img {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -140,12 +152,11 @@
   width: 2.99999vw;
   text-align: center;
 }
-table{
-height: 10%;
-padding: 12px 12px;
+table {
+  height: 10%;
+  padding: 12px 12px;
 }
-table td{
-}
+#mobile-lib{display: none;}
 
 #projects {
   position: relative;
@@ -191,7 +202,7 @@ table td{
 }
 .cards img {
   /* width: inherit; */
-  height:30vh;
+  height: 30vh;
   width: 21.5vw;
   border-radius: 5px;
   /* width: fit-content; */
@@ -201,11 +212,11 @@ table td{
   background-color: inherit;
 }
 .cards button {
-  position:absolute;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:6vw;
+  width: 6vw;
   height: 5vh;
   margin-left: 7%;
   background-color: #ffffff83;
@@ -218,8 +229,7 @@ table td{
   text-decoration: none;
   color: #fff;
 }
-.cards button:hover{
-
+.cards button:hover {
 }
 #p2 {
   position: absolute;
@@ -255,7 +265,7 @@ table td{
   border-radius: inherit;
   opacity: 0.5;
 }
-#mob-tools{
+#mob-tools {
   display: none;
 }
 
@@ -294,7 +304,8 @@ table td{
     flex-direction: column;
     justify-content: flex-start;
     /* height: 145vh;
-     */align-items:center;
+     */
+    align-items: center;
     height: max-content;
     font-size: 32px;
     transition: all 0.25s ease-in-out;
@@ -314,8 +325,7 @@ table td{
     /* margin-top: 10%;
     margin-left: 2%; */
     font-size: 22px;
-  padding: 12px 1px;
-
+    padding: 12px 1px;
   }
   #skills {
     position: relative;
@@ -328,25 +338,24 @@ table td{
     height: 8vh;
     width: 15vw;
   }
-  #lang table th{
+  #lang table th {
     font-size: 28px;
     color: rgb(92, 255, 225);
   }
-  #tools{
+  #tools {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
     height: inherit;
     display: none;
   }
-  #tools:first-child{
+  #tools:first-child {
     column-span: 12px;
   }
-  #tools img{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
+  #tools img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #about #info {
@@ -384,34 +393,58 @@ table td{
     margin: 10px 15%;
     font-size: 18px;
   }
-  #lib img{
+  #lib img {
     display: none;
   }
-  #mob-tools{
+  #mob-tools {
     display: block;
     text-align: center;
   }
-  #mob-tools img{
+  #mob-tools img {
     height: 8vh;
     width: 8vw;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #mob-tools td{
+  #mob-tools td {
     padding-inline-start: 12px;
     margin-left: 10px;
   }
-  #mob-tools table:last-child img{
+  #mob-tools table:last-child img {
     height: 5vh;
   }
-  #mob-tools th{
+  #mob-tools th {
     text-align: center;
     font-size: 28px;
     color: aqua;
   }
-
-
+  #lib{
+    display: none;
+  }
+  #mobile-lib {
+    display: block;
+    text-align: center;
+    width: 80vw;
+  }
+  #mobile-lib table{
+    width: 75vw;
+  }
+  #mobile-lib th {
+    text-align: center;
+    font-size: 24px;
+    color: aqua;
+  }
+  #mobile-lib td {
+    padding-inline-start: 12px;
+  }
+  #mobile-lib img{
+    height: 5vh;
+    width: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 400px) {
