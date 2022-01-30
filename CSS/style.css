@@ -255,7 +255,9 @@ table td{
   border-radius: inherit;
   opacity: 0.5;
 }
-
+#mob-tools{
+  display: none;
+}
 
 @media (max-width: 426px) {
   .container {
@@ -326,16 +328,25 @@ table td{
     height: 8vh;
     width: 15vw;
   }
+  #lang table th{
+    font-size: 28px;
+    color: rgb(92, 255, 225);
+  }
   #tools{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 10px;
+    height: inherit;
+    display: none;
   }
   #tools:first-child{
     column-span: 12px;
   }
   #tools img{
- display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
   }
 
   #about #info {
@@ -375,6 +386,29 @@ table td{
   }
   #lib img{
     display: none;
+  }
+  #mob-tools{
+    display: block;
+    text-align: center;
+  }
+  #mob-tools img{
+    height: 8vh;
+    width: 8vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  #mob-tools td{
+    padding-inline-start: 12px;
+    margin-left: 10px;
+  }
+  #mob-tools table:last-child img{
+    height: 5vh;
+  }
+  #mob-tools th{
+    text-align: center;
+    font-size: 28px;
+    color: aqua;
   }
 
 
