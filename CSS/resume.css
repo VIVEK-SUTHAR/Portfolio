@@ -52,6 +52,12 @@
   width: 50vw;
   height: 50v;
 }
+@media (max-width: 820px) and (min-width: 720px){
+  #resume{
+    position: relative;
+    margin-top: 100%;
+  }
+}
 @media (max-width: 420px) {
   #resume {
     position: relative;

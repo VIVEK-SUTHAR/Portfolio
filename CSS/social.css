@@ -87,8 +87,7 @@
   #follow i {
     font-size: 21px;
   }
-  #ME {
-    position: absolute;
-    margin-top: 5%;
+  #ME{
+  display: none;
   }
 }
