@@ -6,7 +6,8 @@
   scroll-behavior: smooth;
   text-decoration: none;
   background-color: #191627;
-  transition-delay: 00.5s;
+  transition-delay: 0.5s;
+  font-family: "Baloo Bhaijaan 2",cursive;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -42,6 +43,8 @@
   overflow: hidden;
   height: 100%;
   overflow-x: hidden;
+  font-family: "Baloo Bhaijaan 2",cursive;
+
 }
 #landing .intro {
   position: relative;
@@ -269,7 +272,7 @@ table {
   display: none;
 }
 
-@media (max-width: 426px) {
+@media screen and (max-width: 426px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -309,6 +312,7 @@ table {
     height: max-content;
     font-size: 32px;
     transition: all 0.25s ease-in-out;
+    left: 3%;
   }
   #about img {
     display: block;

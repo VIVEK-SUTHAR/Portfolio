@@ -22,7 +22,7 @@
 #follow i {
   font-size: 32px;
 }
-#Links{
+#Links {
   width: 80vw;
   color: rgb(255, 116, 116);
   font-size: 28px;
@@ -37,16 +37,24 @@
   font-size: 28px;
   text-align: center;
 }
-
-#ME{
-    position:absolute;
-    margin-top: 18%;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    color: aqua;
-    font-size: 1.5rem;
+.ft-tab{
+  display: none;
+}
+@media (max-width: 820px) and (min-width: 700px){
+  .ft-tab{
+    display: block;
+  }
+}
+#ME {
+  position: absolute;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: aqua;
+  height: min-content;
+  font-size: 1.5rem;
+  margin-top: 21%;
 }
 @media (max-width: 426px) {
   #ft {
@@ -57,30 +65,30 @@
     margin-top: 280%;
     grid-template-columns: repeat(1, 1fr);
   }
-    #follow {
-        width: 100vw;
-        text-align: center;
-        margin-left: 4%;
-        font-size: 22px;
-    }
-    #Links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-
-    }
-    #Links a{
-        margin-top: 2%;
-        text-align: center;
-        font-size: 22px;
-        font-weight: 600;
-    }
-#follow i {
+  #follow {
+    width: 100vw;
+    text-align: center;
+    margin-left: 4%;
+    font-size: 22px;
+  }
+  #Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  #Links a {
+    margin-top: 2%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #follow i {
     font-size: 21px;
-}
-#ME{
-    margin-top: 135%;
-}
+  }
+  #ME {
+    position: absolute;
+    margin-top: 5%;
+  }
 }
