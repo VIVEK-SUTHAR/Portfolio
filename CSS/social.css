@@ -110,3 +110,24 @@
     ;
   }
 }
+@media (max-width: 400px) {
+  #Links{
+    margin-top: 3%;
+  }
+  #Links a {
+    
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    height: 50vh;
+    margin-top: -4%;
+  }
+  #ME{
+    position: relative;
+    display:block;
+    margin-top: -8%;
+  bottom: 0;
+  text-align: center;
+  }
+}
