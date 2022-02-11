@@ -85,20 +85,21 @@
   }
 
   #Links {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 40vh;
+    margin-top: 8%;
   }
 
   #Links a {
-    margin-top: 2%;
     text-align: center;
     font-size: 22px;
     font-weight: 600;
-    margin-top: -0.5%;
+    margin-top: -8%;
   }
 
   #follow i {
@@ -106,8 +107,11 @@
   }
 
   #ME {
-    display: none;
-    ;
+    position: relative;
+    display:block;
+    margin-top: -8%;
+  bottom: 0;
+  text-align: center;
   }
 }
 @media (max-width: 400px) {
