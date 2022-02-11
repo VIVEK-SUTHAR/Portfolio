@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="CSS/loader.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,8 +27,37 @@
     <link rel="stylesheet" href="CSS/project.css" />
     <link rel="stylesheet" href="CSS/social.css" />
   </head>
-  <body class="animate_animated">
+  <body onload="hide()">
+    <div id="loading">
+      <div class="loader">
+        <div class="loader-inner">
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("loading");
+      window.onload = hide();
+      function hide() {
+        x.style.display = "none";
+      }
+    </script>
     <!-- navbar -->
+
     <nav class="navbar">
       <div class="content">
         <div class="logo"><a href="#">Vivek</a></div>
@@ -405,8 +435,8 @@
         <i class="fas fa-envelope-open"></i>sutharvivek18@gmail.com<br />
       </div>
     </section>
+
     <!-- Javascript loded at end  -->
     <script src="CSS/app.js"></script>
-   
   </body>
 </html>

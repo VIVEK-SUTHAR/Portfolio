@@ -56,8 +56,7 @@
   left: 2%;
   font-size: 36px;
 }
-#landing .intro h1 {
-}
+
 .wrap {
   color: rgb(92, 255, 225);
   font-size: 32px;
@@ -233,8 +232,6 @@ table {
   background-color: transparent;
   text-decoration: none;
   color: #fff;
-}
-.cards button:hover {
 }
 #p2 {
   position: absolute;
