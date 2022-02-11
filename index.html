@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="vivek suthar portfolio,presenting the portfolio of vivek suthar,Anit student at svit vasad"/>
+    <meta
+      name="description"
+      content="vivek suthar portfolio,presenting the portfolio of vivek suthar,Anit student at svit vasad"
+    />
     <title>Vivek Suthar</title>
     <link
       rel="stylesheet"
@@ -58,64 +61,170 @@
       }
     </script>
     <!-- navbar -->
-
-    <nav class="navbar">
-      <div class="content">
-        <div class="logo"><a href="#">Vivek</a></div>
-        <ul class="menu-list">
-          <div class="icon cancel-btn">
-            <i class="fas fa-times"> </i>
+    <div id="content">
+      <nav class="navbar">
+        <div class="content">
+          <div class="logo"><a href="#">Vivek</a></div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"> </i>
+            </div>
+            <li><a href="#home" onclick="closeNav()">Home</a></li>
+            <li><a href="#about" onclick="closeNav()">About</a></li>
+            <li><a href="#resume" onclick="closeNav()">Resume</a></li>
+            <li><a href="#project" onclick="closeNav()">Projects</a></li>
+            <li><a href="#ft" onclick="closeNav()">Get In Touch</a></li>
+          </ul>
+          <div class="icon menu-btn" onclick="showNav()">
+            <i class="fas fa-bars"> </i>
           </div>
-          <li><a href="#home" onclick="closeNav()">Home</a></li>
-          <li><a href="#about" onclick="closeNav()">About</a></li>
-          <li><a href="#resume" onclick="closeNav()">Resume</a></li>
-          <li><a href="#project" onclick="closeNav()">Projects</a></li>
-          <li><a href="#ft" onclick="closeNav()">Get In Touch</a></li>
-        </ul>
-        <div class="icon menu-btn" onclick="showNav()">
-          <i class="fas fa-bars"> </i>
         </div>
-      </div>
-    </nav>
-    <!-- container for about section  -->
-    <div id="home" class="container">
-      <section id="landing">
-        <span class="intro">
-          <h1 class="animate__animated animate__slideInDown">
-            &ltHello,World&gt<br />
-            Hi,I Am Vivek Suthar
-          </h1>
-          <br />
-          <span id="ty"
-            ><br />
-            <a
-              href=""
-              class="typewrite"
-              data-period="2000"
-              data-type='[ "An IT Student", "Web Developer", "3⭐ At Codechef" ]'
-            >
-              <br /><span class="wrap"></span>
-            </a>
+      </nav>
+      <!-- container for about section  -->
+      <div id="home" class="container">
+        <section id="landing">
+          <span class="intro">
+            <h1 class="animate__animated animate__slideInDown">
+              &ltHello,World&gt<br />
+              Hi,I Am Vivek Suthar
+            </h1>
+            <br />
+            <span id="ty"
+              ><br />
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "An IT Student", "Web Developer", "3⭐ At Codechef" ]'
+              >
+                <br /><span class="wrap"></span>
+              </a>
+            </span>
           </span>
-        </span>
-        <span id="btn"
-          ><button><a href="#about">About Me</a></button></span
-        >
-      </section>
-    </div>
-    <!-- project  -->
-    <section id="about">
-      <img src="Images\Pic.jpg" />
-      <div id="myintro" class="animate__animated">
-        Hi! 👋 I'm Vivek, a 19-year-old engineering sophomore pursuing BTech in
-        Information Technology. I am a passionate self-learner, CP
-        Enthusiast,exploring and building projects👨‍💻 using various technologies.
-        I am a frontend web developer well versed in HTML, CSS, JavaScript and
-        stand at a beginner-intermediate level of React.
+          <span id="btn"
+            ><button><a href="#about">About Me</a></button></span
+          >
+        </section>
       </div>
-      <br /><br />
-      <span id="skills" class="animate__animated">
-        <span id="lang">
+      <!-- project  -->
+      <section id="about">
+        <img src="Images\Pic.jpg" />
+        <div id="myintro" class="animate__animated">
+          Hi! 👋 I'm Vivek, a 19-year-old engineering sophomore pursuing BTech
+          in Information Technology. I am a passionate self-learner, CP
+          Enthusiast,exploring and building projects👨‍💻 using various
+          technologies. I am a frontend web developer well versed in HTML, CSS,
+          JavaScript and stand at a beginner-intermediate level of React.
+        </div>
+        <br /><br />
+        <span id="skills" class="animate__animated">
+          <span id="lang">
+            <table>
+              <th colspan="2">Skills</th>
+              <tr>
+                <td><img src="Images\c.svg" /></td>
+                <td>⭐⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td><img src="Images\cpp.svg" /></td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td><img src="Images\js.svg" /></td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td><img src="Images\algo.png" /></td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td><img src="Images\java.gif" /></td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td><img src="Images\sql.png" /></td>
+                <td>⭐⭐⭐</td>
+              </tr>
+            </table>
+          </span>
+          <br />
+          <span id="tools">
+            Tools That I Use:
+            <br />
+            <img src="Images\vscode.svg" />VS Code<br />
+            <img src="Images\git.svg" />Git<br />
+            <img src="Images\Github.svg" />Github<br />
+            <img src="Images\mysql.svg" />MySQL<br />
+            <img src="Images\win10.svg" /> Windows<br />
+            <img src="Images\linux.png" /> Linux
+          </span>
+          <div id="mob-tools">
+            <table>
+              <th colspan="2">Tools That I Use</th>
+              <tr>
+                <td><img src="Images\vscode.svg" /></td>
+                <td>VS CODE</td>
+              </tr>
+              <tr>
+                <td><img src="Images\git.svg" /></td>
+                <td>Git</td>
+              </tr>
+              <tr>
+                <td><img src="Images\Github.svg" /></td>
+                <td>Github</td>
+              </tr>
+              <tr>
+                <td><img src="Images\mysql.svg" /></td>
+                <td>MySQL</td>
+              </tr>
+              <tr>
+                <td><img src="Images\win10.svg" /></td>
+                <td>Windows</td>
+              </tr>
+              <tr>
+                <td><img src="Images\linux.png" /></td>
+                <td>Linux</td>
+              </tr>
+            </table>
+          </div>
+          <span id="lib">
+            Libraries And FrameWorks:<br />
+            <img src="Images\react.gif" />ReactJs<br />
+            <img src="Images\jQuery.png" />jQuery<br />
+            <img src="Images\bootstrap.svg" />BootStrap<br />
+            <img src="Images/tailwind.svg" />Tailwind CSS<br />
+            NextJS<br />
+            AnimateCSS<br />
+          </span>
+          <div id="mobile-lib">
+            <table>
+              <th colspan="2">Libraries And Frame-Works I Use</th>
+              <tr>
+                <td><img src="Images/react.gif" /></td>
+                <td>ReactJS</td>
+              </tr>
+              <tr>
+                <td><img src="Images\/bootstrap.svg" /></td>
+                <td>Bootstrap</td>
+              </tr>
+              <tr>
+                <td><img src="Images/jQuery.png" /></td>
+                <td>jQuery</td>
+              </tr>
+              <tr>
+                <td><img src="Images/tailwind.svg" /></td>
+                <td>Tailwind CSS</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>AnimateCSS</td>
+              </tr>
+            </table>
+          </div>
+        </span>
+      </section>
+      <section class="tab-skills">
+        <div class="tab-container">
           <table>
             <th colspan="2">Skills</th>
             <tr>
@@ -135,7 +244,7 @@
               <td>⭐⭐⭐⭐</td>
             </tr>
             <tr>
-              <td><img src="Images\java.gif" /></td>
+              <td><img src="Images\java.gif" id="java" /></td>
               <td>⭐⭐⭐⭐</td>
             </tr>
             <tr>
@@ -143,19 +252,7 @@
               <td>⭐⭐⭐</td>
             </tr>
           </table>
-        </span>
-        <br />
-        <span id="tools">
-          Tools That I Use:
-          <br />
-          <img src="Images\vscode.svg" />VS Code<br />
-          <img src="Images\git.svg" />Git<br />
-          <img src="Images\Github.svg" />Github<br />
-          <img src="Images\mysql.svg" />MySQL<br />
-          <img src="Images\win10.svg" /> Windows<br />
-          <img src="Images\linux.png" /> Linux
-        </span>
-        <div id="mob-tools">
+
           <table>
             <th colspan="2">Tools That I Use</th>
             <tr>
@@ -185,258 +282,129 @@
             </tr>
           </table>
         </div>
-        <span id="lib">
-          Libraries And FrameWorks:<br />
-          <img src="Images\react.gif" />ReactJs<br />
-          <img src="Images\jQuery.png" />jQuery<br />
-          <img src="Images\bootstrap.svg" />BootStrap<br />
-          <img src="Images/tailwind.svg" />Tailwind CSS<br />
-          NextJS<br />
-          AnimateCSS<br />
-        </span>
-        <div id="mobile-lib">
-          <table>
-            <th colspan="2">Libraries And Frame-Works I Use</th>
-            <tr>
-              <td><img src="Images/react.gif" /></td>
-              <td>ReactJS</td>
-            </tr>
-            <tr>
-              <td><img src="Images\/bootstrap.svg" /></td>
-              <td>Bootstrap</td>
-            </tr>
-            <tr>
-              <td><img src="Images/jQuery.png" /></td>
-              <td>jQuery</td>
-            </tr>
-            <tr>
-              <td><img src="Images/tailwind.svg" /></td>
-              <td>Tailwind CSS</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>AnimateCSS</td>
-            </tr>
-          </table>
+      </section>
+      <!-- download resume from Here  -->
+      <section id="resume">
+        <div id="container">
+          <div id="edu_poster" class="animate__animated">
+            <img src="Images\edu.svg"
+          </div>
+          <div id="edu">
+            Education<br />
+            Pursuing B.E I.T From SVIT,Vasad<br />
+            Current Sem:4 CGPA:8.60<br />
+            12th HSC,Science,Kalarav School,Halol<br />
+            Grade:68.5%<br />
+            10th SSC,N.T High School,Kanisa<br />
+            Grade:87.5%<br />
+          </div>
+          <div id="work" class="animate__animated">
+            <h1>Achivements 🙆‍♂️</h1>
+            👉3⭐ Codechef<br />
+            👉Secured Global Rank Of 535,<br />
+            At Codechef LunchTime(Nov)<br />
+            👉Qualified For SnackDown 2021<br />
+          </div>
         </div>
-      </span>
-    </section>
-    <section class="tab-skills">
-      <div class="tab-container">
-        <table>
-          <th colspan="2">Skills</th>
-          <tr>
-            <td><img src="Images\c.svg" /></td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="Images\cpp.svg" /></td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="Images\js.svg" /></td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="Images\algo.png" /></td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="Images\java.gif" id="java" /></td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><img src="Images\sql.png" /></td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-
-        <table>
-          <th colspan="2">Tools That I Use</th>
-          <tr>
-            <td><img src="Images\vscode.svg" /></td>
-            <td>VS CODE</td>
-          </tr>
-          <tr>
-            <td><img src="Images\git.svg" /></td>
-            <td>Git</td>
-          </tr>
-          <tr>
-            <td><img src="Images\Github.svg" /></td>
-            <td>Github</td>
-          </tr>
-          <tr>
-            <td><img src="Images\mysql.svg" /></td>
-            <td>MySQL</td>
-          </tr>
-          <tr>
-            <td><img src="Images\win10.svg" /></td>
-            <td>Windows</td>
-          </tr>
-
-          <tr>
-            <td><img src="Images\linux.png" /></td>
-            <td>Linux</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-    <!-- download resume from Here  -->
-    <section id="resume">
-      <div id="container">
-        <div id="edu_poster" class="animate__animated">
-          <img src="Images\edu.svg"
-        </div>
-        <div id="edu">
-          Education<br />
-          Pursuing B.E I.T From SVIT,Vasad<br />
-          Current Sem:4 CGPA:8.60<br />
-          12th HSC,Science,Kalarav School,Halol<br />
-          Grade:68.5%<br />
-          10th SSC,N.T High School,Kanisa<br />
-          Grade:87.5%<br />
-        </div>
-        <div id="work" class="animate__animated">
-          <h1>Achivements 🙆‍♂️</h1>
-          👉3⭐ Codechef<br />
-          👉Secured Global Rank Of 535,<br />
-          At Codechef LunchTime(Nov)<br />
-          👉Qualified For SnackDown 2021<br />
-        </div>
-      </div>
-    </section>
-    <!-- <section id="projects" >
-      <span id="project_head" class="animate__animated">Check Out My Projects</span>
-      <div id="project_card">
-        <div class="cards" class="animate__animated">
-          <img src="p1.png" />
-          Crypto Price Tracker<br>
-          Real Time Crypto price Tracker<br>
-          <button class="animate__animated">
-        <a href="">Check Out</a>
-          </button>
-        </div>
-        <div class="cards">
-          <img src="p2.png" />
-          macOS Clone<br>
-          Tried To Clone UI Of macOs
-          (In Progress)
-          <button>
-            <a href="">Check Out</a>
+      </section>
+      <section id="project">
+        <div id="projecthead">Here Is Some Projects That I Made</div>
+        <div class="projContainer">
+          <div class="projInfoContainer">
+            <h2>Crypto Price Tracker</h2>
+            <p class="projCat"></p>
+            <p class="projSpec">
+              <br />Real Time Crypto-Currencies Price Tracker<br />Made with
+              public API And React<br />
+              <button class="btn">
+                <a href="https://cryptopricetrackerbyvivek.netlify.app"
+                  >Check Out</a
+                >
               </button>
+            </p>
+          </div>
+          <img src="Images\p1.png" />
         </div>
-        <div class="cards">
-          <img src="p3.png" />
-          Text-Utils<br>
-          Manipuliate Text<br>
-          Made With React
-          <br>
-          <button>
-            <a href="">Check Out</a>
-              </button>
-        </div>
-        <div class="cards">HI Vivek</div>
-      </div>
-    </section> -->
-    <section id="project">
-      <div id="projecthead">Here Is Some Projects That I Made</div>
-      <div class="projContainer">
-        <div class="projInfoContainer">
-          <h2>Crypto Price Tracker</h2>
-          <p class="projCat"></p>
-          <p class="projSpec">
-            <br />Real Time Crypto-Currencies Price Tracker<br />Made with
-            public API And React<br />
+        <div class="projContainer">
+          <div class="projInfoContainer">
+            <h2>macOS Clone</h2>
+            <p class="projCat"></p>
+            <p class="projSpec">
+              Tried To Clone UI Of macOS<br />
+              using HTML,CSS,JavaScript And Little bit of jQuery
+              <br />Work In Progress
+            </p>
+            <br />
             <button class="btn">
-              <a href="https://cryptopricetrackerbyvivek.netlify.app"
+              <a href="https://vivek-suthar.github.io/macOS-clone/"
                 >Check Out</a
               >
             </button>
-          </p>
+          </div>
+          <img src="Images\p2.png" />
         </div>
-        <img src="Images\p1.png" />
-      </div>
+        <div class="projContainer">
+          <div class="projInfoContainer">
+            <h2>Text-utils</h2>
+            <p class="projCat"></p>
+            <p class="projSpec">
+              Manipuliate your text with Text-Utils<br />
+              Made With ReactJS<br />
+              <button class="btn">
+                <a href="https://textutilsbyvivek.netlify.app">Check Out</a>
+              </button>
+            </p>
+          </div>
+          <img src="Images\p3.png" />
+        </div>
+        <div class="projContainer">
+          <div class="projInfoContainer">
+            <h2>To-Do App</h2>
+            <p class="projCat"></p>
+            <p class="projSpec">
+              Manage your daily Work<br />
+              With ThisTo-Do App<br />
+              Made With ReactJS<br />
+              <button class="btn">
+                <a href="todosbyvivek.netlify.app">Check Out</a>
+              </button>
+            </p>
+          </div>
+          <img src="Images\p4.png" />
+        </div>
+      </section>
+      <footer id="ft">
+        <div id="follow">
+          Follow Me
 
-      <div class="projContainer">
-        <div class="projInfoContainer">
-          <h2>macOS Clone</h2>
-          <p class="projCat"></p>
-          <p class="projSpec">
-            Tried To Clone UI Of macOS<br />
-            using HTML,CSS,JavaScript And Little bit of jQuery
-            <br />Work In Progress
-          </p>
+          <i class="fab fa-linkedin-in"></i>
+          Vivek Suthar<br />
+          <i class="fab fa-github"></i>
+          Github:VIVEK-SUTHAR<br />
+          <i class="fas fa-envelope-open"></i>sutharvivek18@gmail.com<br />
+        </div>
+        <div id="Links">
+          Quick Links
+          <br /><br />
+          <a href="https://viveksuthar.netlify.app">Profile Card</a>
           <br />
-          <button class="btn">
-            <a href="https://vivek-suthar.github.io/macOS-clone/">Check Out</a>
-          </button>
+          <a href="#home">Home</a> <br />
+          <a href="#about">About</a> <br />
         </div>
-        <img src="Images\p2.png" />
-      </div>
+        <div id="ME">Made With ❤ &copy Vivek-Suthar</div>
+      </footer>
+      <section class="ft-tab">
+        <div class="social-icon">
+          Follow Me
 
-      <div class="projContainer">
-        <div class="projInfoContainer">
-          <h2>Text-utils</h2>
-          <p class="projCat"></p>
-          <p class="projSpec">
-            Manipuliate your text with Text-Utils<br />
-            Made With ReactJS<br />
-            <button class="btn">
-              <a href="https://textutilsbyvivek.netlify.app">Check Out</a>
-            </button>
-          </p>
+          <i class="fab fa-linkedin-in"></i>
+          Vivek Suthar
+          <i class="fab fa-github"></i>
+          Github:VIVEK-SUTHAR<br />
+          <i class="fas fa-envelope-open"></i>sutharvivek18@gmail.com<br />
         </div>
-        <img src="Images\p3.png" />
-      </div>
-
-      <div class="projContainer">
-        <div class="projInfoContainer">
-          <h2>To-Do App</h2>
-          <p class="projCat"></p>
-          <p class="projSpec">
-            Manage your daily Work<br />
-            With ThisTo-Do App<br />
-            Made With ReactJS<br />
-            <button class="btn">
-              <a href="todosbyvivek.netlify.app">Check Out</a>
-            </button>
-          </p>
-        </div>
-        <img src="Images\p4.png" />
-      </div>
-    </section>
-    <footer id="ft">
-      <div id="follow">
-        Follow Me
-
-        <i class="fab fa-linkedin-in"></i>
-        Vivek Suthar<br />
-        <i class="fab fa-github"></i>
-        Github:VIVEK-SUTHAR<br />
-        <i class="fas fa-envelope-open"></i>sutharvivek18@gmail.com<br />
-      </div>
-      <div id="Links">
-        Quick Links
-        <br /><br />
-        <a href="https://viveksuthar.netlify.app">Profile Card</a>
-        <br />
-        <a href="#home">Home</a> <br />
-        <a href="#about">About</a> <br />
-      </div>
-      <div id="ME">Made With ❤ &copy Vivek-Suthar</div>
-    </footer>
-    <section class="ft-tab">
-      <div class="social-icon">
-        Follow Me
-
-        <i class="fab fa-linkedin-in"></i>
-        Vivek Suthar
-        <i class="fab fa-github"></i>
-        Github:VIVEK-SUTHAR<br />
-        <i class="fas fa-envelope-open"></i>sutharvivek18@gmail.com<br />
-      </div>
-    </section>
-
+      </section>
+    </div>
     <!-- Javascript loded at end  -->
     <script src="CSS/app.js"></script>
   </body>

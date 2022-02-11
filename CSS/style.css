@@ -26,6 +26,12 @@
 ::-webkit-scrollbar-track:horizontal {
   height: 10px;
 }
+html{
+  overflow-x: hidden;
+}
+#content{
+  width:100vw;
+}
 .container {
   display: block;
   background-color: #191627;
