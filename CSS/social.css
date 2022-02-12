@@ -108,18 +108,20 @@
 
   #ME {
     position: relative;
-    display:block;
+    display: block;
     margin-top: -8%;
-  bottom: 0;
-  text-align: center;
+    bottom: 0;
+    text-align: center;
   }
 }
+
 @media (max-width: 400px) {
-  #Links{
+  #Links {
     margin-top: 3%;
   }
+
   #Links a {
-    
+
     position: relative;
     text-align: center;
     font-size: 22px;
@@ -127,11 +129,12 @@
     height: 50vh;
     margin-top: -4%;
   }
-  #ME{
+
+  #ME {
     position: relative;
-    display:block;
+    display: block;
     margin-top: -8%;
-  bottom: 0;
-  text-align: center;
+    bottom: 0;
+    text-align: center;
   }
 }

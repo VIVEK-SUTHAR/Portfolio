@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,31 +8,39 @@
   text-decoration: none;
   background-color: #191627;
   transition-delay: 0.5s;
-  font-family: "Baloo Bhaijaan 2",cursive;
+  font-family: "Baloo Bhaijaan 2", cursive;
 }
+
 ::-webkit-scrollbar {
   width: 10px;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: rgba(61, 61, 61, 0.637);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(175, 175, 175, 0.637);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(102, 102, 102, 0.637);
 }
+
 ::-webkit-scrollbar-track:horizontal {
   height: 10px;
 }
-html{
+
+html {
   overflow-x: hidden;
 }
-#content{
-  width:100vw;
+
+#content {
+  width: 100vw;
 }
+
 .container {
   display: block;
   background-color: #191627;
@@ -39,6 +48,7 @@ html{
   height: 100vh;
   overflow: hidden;
 }
+
 #landing {
   position: relative;
   top: 10%;
@@ -49,9 +59,10 @@ html{
   overflow: hidden;
   height: 100%;
   overflow-x: hidden;
-  font-family: "Baloo Bhaijaan 2",cursive;
+  font-family: "Baloo Bhaijaan 2", cursive;
 
 }
+
 #landing .intro {
   position: relative;
   display: flex;
@@ -67,6 +78,7 @@ html{
   color: rgb(92, 255, 225);
   font-size: 32px;
 }
+
 #ty {
   position: absolute;
   display: flex;
@@ -75,6 +87,7 @@ html{
   top: 35%;
   left: 20%;
 }
+
 #landing button {
   position: absolute;
   height: 8vh;
@@ -89,15 +102,111 @@ html{
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
 #landing button a {
   text-decoration: none;
   color: rgb(117, 237, 255);
 }
+
 #landing button:hover {
   transition-delay: 00.5s;
   background-color: aqua;
   color: rgb(50, 50, 50);
 }
+
+/* svg-scroll down arrow */
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 100px;
+}
+
+.arrows path {
+  stroke: #2994D1;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #about {
   position: relative;
   background-color: #191627;
@@ -107,21 +216,48 @@ html{
   color: rgb(255, 255, 255);
   font-family: "Baloo Bhaijaan 2", cursive;
 }
+
 #about {
   display: flex;
   justify-content: space-evenly;
 }
-#about img {
-  border-radius: 10px;
+
+#about #my_pic img {
+  border-radius: 50%;
   height: 40vh;
   width: 20vw;
+  border: 2px solid #876cff;
+  box-shadow: 0 0 45px 2px #876cff;
+  animation: glow;
+  animation-duration: 1.5s;
+  animation-timing-function:ease;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+@keyframes glow {
+  0%{
+    box-shadow: 0 0 2px 2px #f0edff;
+  }
+  25%{
+    box-shadow: 0 0 5px 5px #c4b7ff;
+  }
+  55%{
+    box-shadow: 0 0 15px 10px #ab99ff;
+  }
+  100%{
+    box-shadow: 0 0 20px 10px #876cff;
+  }
 }
 #myintro {
   display: block;
   width: 51vw;
   height: 60vh;
   font-size: 22px;
+  display: flex;
+  align-items: space-evenly;
+  justify-content: center;
 }
+
 #skills {
   position: absolute;
   margin-top: 25%;
@@ -133,12 +269,16 @@ html{
   width: 100vw;
   text-align: center;
 }
+
 #lang {
   text-align: center;
 }
+
 #lang img {
   height: 5vh;
   width: 3vw;
+  border: none;
+  box-shadow: 0 0;
 }
 
 #tools img {
@@ -150,7 +290,10 @@ html{
   width: 2.99999vw;
   padding: 5px;
   text-align: center;
+  border: none;
+  box-shadow: 0 0;
 }
+
 #lib img {
   position: absolute;
   display: flex;
@@ -159,15 +302,24 @@ html{
   height: 40px;
   width: 2.99999vw;
   text-align: center;
+  border: none;
+  box-shadow: 0 0;
 }
+
 table {
   height: 10%;
   padding: 12px 12px;
 }
-#mobile-lib{display: none;}
-.tab-skills{
-  height: 0;width: 0;
+
+#mobile-lib {
+  display: none;
 }
+
+.tab-skills {
+  height: 0;
+  width: 0;
+}
+
 #projects {
   position: relative;
   background-color: #191627;
@@ -177,6 +329,7 @@ table {
   padding-top: 10%;
   transition: all 0.45s ease-in-out;
 }
+
 #project_head {
   position: relative;
   display: flex;
@@ -206,10 +359,12 @@ table {
   color: rgb(43, 43, 43);
   overflow: hidden;
 }
+
 .cards:hover {
   box-shadow: 0 0 22px 10px rgb(148, 148, 148);
   height: 51vh;
 }
+
 .cards img {
   /* width: inherit; */
   height: 30vh;
@@ -217,10 +372,12 @@ table {
   border-radius: 5px;
   /* width: fit-content; */
 }
+
 .cards h5 {
   font-size: 15px;
   background-color: inherit;
 }
+
 .cards button {
   position: absolute;
   display: flex;
@@ -234,11 +391,13 @@ table {
   border-radius: 10px;
   margin-top: 2px;
 }
+
 .cards button a {
   background-color: transparent;
   text-decoration: none;
   color: #fff;
 }
+
 #p2 {
   position: absolute;
   margin-top: 30vh;
@@ -252,6 +411,7 @@ table {
   transition: all 0.2s ease-in-out;
   z-index: 9999;
 }
+
 #p3 {
   margin-left: -6vw;
 }
@@ -260,10 +420,12 @@ table {
   background-color: #876cff;
   height: 4.5vh;
 }
+
 #p2:hover {
   background-color: #876cff;
   width: 6.5vw;
 }
+
 #p1explore {
   margin-top: 40vh;
   width: 15vw;
@@ -273,14 +435,17 @@ table {
   border-radius: inherit;
   opacity: 0.5;
 }
+
 #mob-tools {
   display: none;
 }
-.tab-skills{
+
+.tab-skills {
   display: none;
 }
+
 @media (max-width: 820px) and (min-width: 720px) {
-  .tab-skills{
+  .tab-skills {
     display: block;
   }
 }
@@ -291,13 +456,15 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
   }
+
   #landing .intro {
     display: block;
     left: 10%;
     font-size: 24px;
   }
+
   #ty {
     display: block;
     top: 15rem;
@@ -305,16 +472,28 @@ table {
     font-size: 20px;
     width: 80vw;
   }
+
   .wrap {
     font-size: 28px;
   }
+
   #landing button {
     height: 6vh;
     width: 30vw;
-    top: 70%;
+    top: 65%;
     left: 10%;
     font-size: 18px;
   }
+
+  .arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 80px;
+  }
+
   #about {
     text-align: center;
     flex-direction: column;
@@ -327,13 +506,16 @@ table {
     transition: all 0.25s ease-in-out;
     left: 3%;
   }
-  #about img {
-    display: block;
-    margin-left: 20%;
+
+  #about #my_pic img {
     height: 30vh;
     width: 30vh;
     margin-top: 10%;
+    border-radius: 50%;
+    border: 2px solid #876cff;
+    box-shadow: 0 0 10px 5px #876cff;
   }
+
   #myintro {
     display: block;
     width: 100vw;
@@ -344,6 +526,7 @@ table {
     font-size: 22px;
     padding: 12px 1px;
   }
+
   #skills {
     position: relative;
     display: flex;
@@ -351,14 +534,19 @@ table {
     justify-content: flex-start;
     margin-top: -5%;
   }
+
   #lang img {
     height: 8vh;
     width: 15vw;
+    border: none;
+    box-shadow: 0 0;
   }
+
   #lang table th {
     font-size: 28px;
     color: rgb(92, 255, 225);
   }
+
   #tools {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -366,13 +554,17 @@ table {
     height: inherit;
     display: none;
   }
+
   #tools:first-child {
     column-span: 12px;
   }
+
   #tools img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border: none;
+    box-shadow: 0 0;
   }
 
   #about #info {
@@ -383,88 +575,113 @@ table {
     margin-left: -5%;
     width: 65vw;
   }
+
   #projects .cards {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #projects .project:hover {
     height: 16vh;
     width: 52vw;
   }
+
   #projects .project {
     height: 18vh;
     width: 60vw;
     margin-top: 2%;
     margin-left: 10%;
   }
+
   #container {
     width: 90vw;
     display: flex;
     justify-content: center;
   }
+
   #project_card {
     grid-template-columns: repeat(1, 5fr);
     row-gap: 12px;
   }
+
   .cards {
     height: 20vh;
     margin: 10px 15%;
     font-size: 18px;
   }
+
   #lib img {
     display: none;
   }
+
   #mob-tools {
     display: block;
     text-align: center;
   }
+
   #mob-tools img {
     height: 8vh;
     width: 8vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    box-shadow: 0 0;
   }
+
   #mob-tools td {
     padding-inline-start: 12px;
     margin-left: 10px;
   }
+
   #mob-tools table:last-child img {
     height: 5vh;
   }
+
   #mob-tools th {
     text-align: center;
     font-size: 28px;
     color: aqua;
   }
-  #lib{
+
+  #lib {
     display: none;
   }
+
   #mobile-lib {
     display: block;
     text-align: center;
     width: 80vw;
   }
-  #mobile-lib table{
-    width: 75vw;
+
+  #mobile-lib table {
+    width: 70vw;
   }
+
   #mobile-lib th {
     text-align: center;
     font-size: 24px;
     color: aqua;
+
   }
+
   #mobile-lib td {
     padding-inline-start: 12px;
   }
-  #mobile-lib img{
+
+  #mobile-lib img {
     height: 5vh;
     width: 8vw;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: none;
+    box-shadow: 0 0;
   }
-  .tab-skills,.tab-container{
+
+  .tab-skills, .tab-container {
     display: none;
-  }  
+  }
 }
 
 @media (max-width: 400px) {
@@ -472,17 +689,20 @@ table {
     display: block;
     height: max-content;
   }
+
   #skills {
     position: relative;
     margin-top: 10%;
     background-color: transparent;
     font-size: 20px;
   }
+
   .cards {
     height: 25vh;
     width: 50vw;
     margin: 15px 25%;
   }
+
   .cards img {
     width: inherit;
   }
