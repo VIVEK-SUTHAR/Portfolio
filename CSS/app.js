@@ -10,33 +10,36 @@ function showNav() {
 function closeNav() {
     clsnav.style.left = "-100%";
 }
-function gototop() {
-    this.scrollTo(0, 0);
-}
-
-// menubtn.onclick=()=>{
-// menu.classList.add("active");
-// menubtn.classList.add("hide");
-// }
 cancelbtn.onclick = () => {
     clsnav.style.left = "-100%";
 }
+
 window.onload = () => {
     body.classList.add("animate__zoomInUp");
 }
+function backtotop(){
+    window.scrollTo(0,0);
+}
 window.onscroll = () => {
     this.scrollY > 20 ? navbar.classList.add("stickey") : navbar.classList.remove("stickey");
-    if (this.scrollY > 50) {
-        let intro = document.getElementById('myintro');
-        intro.classList.add("animate__slideInUp");
+    let top = document.getElementById("top");
+    
+    
+    if (this.scrollY > 95) {
+        let edu_pic = document.getElementById('edu_poster');
+        edu_pic.classList.add("animate__zoomInLeft");
         let skill = document.getElementById('skills');
         skill.classList.add("animate__backInLeft");
         let i = document.querySelector("#about img");
         i.classList.add("animate__slideInDown");
     }
-    if (this.scrollY > 55) {
-        let edu_pic = document.getElementById('edu_poster');
-        edu_pic.classList.add("animate__zoomInLeft");
+
+    //back-top
+    if (this.scrollY > 20) {
+        top.style.display = "inline-block";
+    }
+    else{
+        top.style.display = "none";
     }
 }
 

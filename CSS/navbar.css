@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .content {
   max-width: 1250px;
   margin: auto;
@@ -11,6 +12,7 @@
   overflow-y: hidden;
 
 }
+
 .navbar {
   position: fixed;
   z-index: 10;
@@ -19,28 +21,34 @@
   background-color: #191627;
   overflow-y: hidden;
 }
+
 .navbar.stickey {
   padding: 12px 0;
   background-color: #191627;
 }
+
 .navbar .content {
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .menu-list {
   display: inline-flex;
 }
+
 .navbar .logo a {
   text-decoration: none;
   color: rgb(126, 255, 246);
   font-size: 30px;
   font-weight: 600;
 }
+
 .menu-list li {
   list-style: none;
 }
+
 .menu-list li a {
   text-decoration: none;
   color: rgb(132, 243, 255);
@@ -49,25 +57,30 @@
   margin-left: 25px;
   transition: all 0.3s ease;
 }
+
 .menu-list li a:hover {
   color: rgb(255, 138, 117);
   text-decoration: underline;
 }
+
 .icon {
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
+
 .icon.cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
 }
+
 @media (max-width: 764px) {
   .icon {
     display: block;
   }
+
   .navbar .menu-list {
     position: fixed;
     top: 0;
@@ -81,15 +94,19 @@
     text-align: center;
     transition: all 0.5s ease-in-out;
   }
+
   .navbar .menu-list.active {
     left: 0%;
   }
+
   .navbar .menu-list li {
     margin-top: 45px;
   }
+
   .navbar .menu-list li {
     font-size: 42px;
   }
+
   #About {
     top: 8%;
     background: rgb(167, 31, 31);
